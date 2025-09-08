@@ -1,0 +1,32 @@
+{
+  "name": "my-bookshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple CAP project.",
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "@cap-js/hana": "^2.2.0",
+    "@sap/cds": "^9",
+    "@sap/xsenv": "^6.0.0",
+    "@sap/xssec": "^4.9.1",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": ">=8"
+  },
+  "cds": {
+    "fiori": {
+      "preview": true
+    },
+    "server": {
+      "index": true
+    }
+  }
+}
