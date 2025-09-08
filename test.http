@@ -1,0 +1,17 @@
+### Books 一覧
+GET http://localhost:34893/odata/v4/catalog/Books
+
+### Author 101 を1件取得
+GET http://localhost:34893/odata/v4/catalog/Authors(101)
+
+### Authors への作成（@readonlyなので失敗する想定）
+POST http://localhost:34893/odata/v4/catalog/Authors
+Content-Type: application/json
+
+{"ID":101,"name":"Some Author"}
+
+### Orders の作成（成功する想定）
+POST http://localhost:34893/odata/v4/catalog/Orders
+Content-Type: application/json;IEEE754Compatible=true
+
+{"book_ID":201,"amount":5}
